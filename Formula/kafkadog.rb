@@ -2,16 +2,16 @@
 class Kafkadog < Formula
   desc "Kafka consumer/producer CLI"
   homepage "https://github.com/maximepeschard/kafkadog"
-  version "0.2.1"
+  version "0.3.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/maximepeschard/kafkadog/releases/download/v0.2.1/kafkadog_0.2.1_Darwin_x86_64.tar.gz"
-    sha256 "d5c031d0394a02961e6741240628673c9d77cb9e1e38fac03b6c9b77601ac565"
+    url "https://github.com/maximepeschard/kafkadog/releases/download/v0.3.0/kafkadog_0.3.0_Darwin_x86_64.tar.gz"
+    sha256 "f16238126302ae3af6966816d622ab672be5b5e3b193acda47f32b04e4bd72f0"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/maximepeschard/kafkadog/releases/download/v0.2.1/kafkadog_0.2.1_Linux_x86_64.tar.gz"
-      sha256 "86dab6d99fd0fcb1aa7495f12657eb6ed1eee583d8e2521f7a85acb20cdacc10"
+      url "https://github.com/maximepeschard/kafkadog/releases/download/v0.3.0/kafkadog_0.3.0_Linux_x86_64.tar.gz"
+      sha256 "b9b2f71e82bb989a476b42b196650679cb3d98d327c00e7a709685fc8e8ba73e"
     end
   end
 
